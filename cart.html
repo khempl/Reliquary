@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliquary - Корзина</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/logo icon.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="img/lo.png" alt="logo" height="60"></a>
+            </div>
+            <nav class="nav">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="catalog.html">КАТАЛОГ</a>
+                <a href="about.html">О НАС</a>
+                <a href="contacts.html">КОНТАКТЫ</a>
+                <a href="cart.html">КОРЗИНА</a>
+                <a href="login.html">ПРОФИЛЬ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="cart-total-bar">
+            <span class="total-label">Итого:</span>
+            <span class="total-price" id="total-price-top">0 ₽</span>
+            <span class="total-count" id="total-count">0 товаров</span>
+        </div>
+
+        <hr>
+
+
+        <div class="cart-list" id="cart-list">
+
+        </div>
+
+
+        <div class="cart-empty" id="cart-empty" style="display: none;">
+            <p class="empty-icon"><img src="img/sadsmile1.png" alt="Душераздирающий смайлик" height="150px"></p>
+            <p class="empty-text">Корзина пуста</p>
+            <a href="index.html" class="btn-continue">Перейти к покупкам</a>
+        </div>
+
+        <hr id="bottom-hr">
+
+
+        <div class="cart-checkout" id="cart-checkout">
+            <button class="btn-checkout" onclick="window.location.href='buy.html'">
+                Оформить заказ ➜
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="mailto:kkhempll@gmail.com">&#128386; kkhempll@gmail.com</a>
+                <span class="footer-sep">|</span>
+                <a href="tel:+78001234567">&#9990; +78001234567</a>
+                <span class="footer-sep">|</span>
+                <span>Site Designed By: <a href="https://t.me/khempl">khempl</a></span>
+                <span class="footer-sep">|</span>
+                <span>&copy; 2020-2026</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://t.me/khempl"><img src="img/tg.png" alt="Telegram" width="30" height="30"></a>
+                <span class="footer-sep">|</span>
+                <a href="https://vk.com/khempl"><img src="img/vk.png" alt="VK" width="30" height="30"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/stars.js"></script>
+</body>
+
+</html>

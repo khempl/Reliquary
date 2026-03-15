@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliquary — Личный кабинет</title>
+    <link rel="icon" href="img/logo icon.png" type="image/png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="img/lo.png" alt="logo" height="60"></a>
+            </div>
+            <nav class="nav">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="catalog.html">КАТАЛОГ</a>
+                <a href="about.html">О НАС</a>
+                <a href="contacts.html">КОНТАКТЫ</a>
+                <a href="cart.html">КОРЗИНА</a>
+                <a href="profile.html">ПРОФИЛЬ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-header">
+            <div class="profile-avatar" id="profile-avatar">👤</div>
+            <div class="profile-title-block">
+                <h2 id="profile-name-display">Личный кабинет</h2>
+                <p id="profile-phone-display" class="profile-phone"></p>
+            </div>
+            <button class="btn-logout" id="btn-logout">Выйти</button>
+        </div>
+
+        <div class="profile-layout">
+
+            <div class="profile-left">
+
+                <div class="profile-card" id="card-info">
+                    <h3 class="card-title">Личные данные</h3>
+                    <div class="profile-form">
+
+                        <div class="form-group">
+                            <label class="form-label">ФИО <span class="req">*</span></label>
+                            <input type="text" id="inp-fio" placeholder="Джозеф Голдберг">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" id="inp-email" placeholder="joegoldberg@mail.ru">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Дата рождения</label>
+                            <input type="date" id="inp-birthday">
+                        </div>
+
+                        <button class="btn-save" id="btn-save-info">Сохранить</button>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <h3 class="card-title">Адрес доставки</h3>
+                    <div class="profile-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Город</label>
+                                <input type="text" id="inp-city" placeholder="Владимир">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Индекс</label>
+                                <input type="text" id="inp-zip" placeholder="999999">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Улица</label>
+                            <input type="text" id="inp-street" placeholder="ул. Котят">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Дом</label>
+                                <input type="text" id="inp-house" placeholder="52">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Квартира</label>
+                                <input type="text" id="inp-flat" placeholder="67">
+                            </div>
+                        </div>
+                        <button class="btn-save" id="btn-save-address">Сохранить</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="profile-right">
+
+                <div class="profile-card">
+                    <h3 class="card-title">Привязанные карты</h3>
+                    <div id="cards-list" class="cards-list">
+                    </div>
+                    <div class="add-card-form" id="add-card-form" style="display:none;">
+                        <div class="form-group">
+                            <label class="form-label">Номер карты</label>
+                            <input type="text" id="inp-card" placeholder="0000 0000 0000 0000" maxlength="19">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Срок</label>
+                                <input type="text" id="inp-expire" placeholder="MM/YY" maxlength="5">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">CVV</label>
+                                <input type="password" id="inp-cvv" placeholder="•••" maxlength="3">
+                            </div>
+                        </div>
+                        <div class="form-row-btns">
+                            <button class="btn-save" id="btn-add-card-confirm">Привязать</button>
+                            <button class="btn-cancel" id="btn-cancel-card">Отмена</button>
+                        </div>
+                    </div>
+                    <button class="btn-add-card" id="btn-show-add-card">+ Привязать карту</button>
+                </div>
+
+
+                <div class="profile-card">
+                    <h3 class="card-title">Товары в доставке</h3>
+                    <div id="orders-delivery" class="orders-list">
+                        <div class="empty-state">
+                            <span>📦</span>
+                            <p>Активных доставок нет</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <h3 class="card-title">История покупок</h3>
+                    <div id="orders-history" class="orders-list">
+                        <div class="empty-state">
+                            <span>📦</span>
+                            <p>Покупок пока нет</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="mailto:kkhempll@gmail.com">&#128386; kkhempll@gmail.com</a>
+                <span class="footer-sep">|</span>
+                <a href="tel:+78001234567">&#9990; +78001234567</a>
+                <span class="footer-sep">|</span>
+                <span>Site Designed By: <a href="https://t.me/khempl">khempl</a></span>
+                <span class="footer-sep">|</span>
+                <span>&copy; 2020-2026</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://t.me/khempl"><img src="img/tg.png" alt="Telegram" width="30" height="30"></a>
+                <span class="footer-sep">|</span>
+                <a href="https://vk.com/khempl"><img src="img/vk.png" alt="VK" width="30" height="30"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/profile.js"></script>
+    <script src="js/stars.js"></script>
+
+
+</body>
+
+</html>

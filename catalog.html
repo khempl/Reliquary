@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliquary - Каталог</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/logo icon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="img/lo.png" alt="logo" height="60"></a>
+            </div>
+            <nav class="nav">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="catalog.html">КАТАЛОГ</a>
+                <a href="about.html">О НАС</a>
+                <a href="contacts.html">КОНТАКТЫ</a>
+                <a href="cart.html">КОРЗИНА</a>
+                <a href="login.html">ПРОФИЛЬ</a>
+            </nav>
+            <form class="search" action="#" method="get">
+                <input type="text" class="searchi" placeholder="Поиск товара" name="search">
+                <button type="submit" class="searchb">Найти</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <h2>КАТАЛОГ ТОВАРОВ</h2>
+        <p class="results-count" id="results-count">Показано товаров: 12</p>
+        <div class="filters">
+            <div class="filter-group">
+                <p class="filter-title">ТИП ТОВАРА</p>
+                <div class="filter-checkboxes">
+                    <label class="filter-label"><input type="checkbox" value="одежда"> Одежда</label>
+                    <label class="filter-label"><input type="checkbox" value="сувениры"> Сувениры</label>
+                    <label class="filter-label"><input type="checkbox" value="лего"> Лего</label>
+                    <label class="filter-label"><input type="checkbox" value="фигурки"> Фигурки</label>
+                </div>
+            </div>
+            <div class="filter-group">
+                <p class="filter-title">ВСЕЛЕННАЯ</p>
+                <div class="filter-radios">
+                    <label class="filter-label"><input type="radio" name="universe" value=""> Все</label>
+                    <label class="filter-label"><input type="radio" name="universe" value="игры"> Игры</label>
+                    <label class="filter-label"><input type="radio" name="universe" value="сериалы"> Сериалы</label>
+                    <label class="filter-label"><input type="radio" name="universe" value="фильмы"> Фильмы</label>
+                    <label class="filter-label"><input type="radio" name="universe" value="аниме"> Аниме</label>
+                </div>
+            </div>
+            <div class="filter-group">
+                <p class="filter-title">СОРТИРОВКА</p>
+                <select class="filter-select" id="sort-select">
+                    <option value="default">По умолчанию</option>
+                    <option value="price-asc">Цена: по возрастанию</option>
+                    <option value="price-desc">Цена: по убыванию</option>
+                    <option value="name">По названию</option>
+                </select>
+            </div>
+            <button class="filter-reset" id="filter-reset">Сбросить фильтры </button>
+        </div>
+        <hr>
+        <section class="catalog-grid" id="catalog-grid">
+            <a href="product.html">
+                <article data-type="фигурки" data-universe="игры" data-price="8400" data-name="Фигурка «Ведьмак»">
+                    <img src="img/ved.png" alt="Фигурка Геральта">
+                    <p class="center">Фигурка «Ведьмак»</p>
+                    <p class="center"><i>Коллекционная фигурка "Ведьмак Геральт"</i></p>
+                    <p class="price"><s>10199&#8381;</s> 8400&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+            <a href="error.html">
+                <article data-type="лего" data-universe="фильмы" data-price="3300" data-name="Конструктор">
+                    <img src="img/bet.png" alt="Бэтцикл">
+                    <p class="center">Конструктор</p>
+                    <p class="center"><i>Конструктор "Бэтмен: Бэтцикл"</i></p>
+                    <p class="price">3300&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+            <a href="error.html">
+                <article data-type="одежда" data-universe="фильмы" data-price="1500" data-name="Шляпа">
+                    <img src="img/opp.png" alt="Шляпа">
+                    <p class="center">Шляпа</p>
+                    <p class="center"><i>Шляпа "Оппенгеймер"</i></p>
+                    <p class="price"><s>2500&#8381;</s> 1500&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+            <a href="error.html">
+                <article data-type="одежда" data-universe="аниме" data-price="1300" data-name="Футболка с принтом">
+                    <img src="img/mon.png" alt="Футболка">
+                    <p class="center">Футболка с принтом</p>
+                    <p class="center"><i>Футболка "Монстр: Йохан Либерт"</i></p>
+                    <p class="price">1300&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+            <a href="error.html">
+                <article data-type="одежда" data-universe="фильмы" data-price="700" data-name="Солнцезащитные очки">
+                    <img src="img/gla.png" alt="Очки">
+                    <p class="center">Солнцезащитные очки</p>
+                    <p class="center"><i>Солнцезащитные очки "Тони Старк"</i></p>
+                    <p class="price">700&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+            <a href="error.html">
+                <article data-type="одежда" data-universe="другое" data-price="1100" data-name="Панама">
+                    <img src="https://slipknotmerch.com/cdn/shop/files/Bucket-Hat.png?v=1713373241&width=800"
+                        alt="Панама">
+                    <p class="center">Панама</p>
+                    <p class="center"><i>Панама "Slipknot"</i></p>
+                    <p class="price">1100&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+            <a href="error.html">
+                <article data-type="другое" data-universe="аниме" data-price="7150" data-name="Скейтборд">
+                    <img src="img/att.png" alt="Скейтборд">
+                    <p class="center">Скейтборд</p>
+                    <p class="center"><i>Скейтборд "Атака титанов"</i></p>
+                    <p class="price"><s>9900&#8381;</s> 7150&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+            <a href="error.html">
+                <article data-type="сувениры" data-universe="сериалы" data-price="500" data-name="Сувенирная банкнота">
+                    <img src="img/bre.png" alt="Купюра">
+                    <p class="center">Сувенирная банкнота</p>
+                    <p class="center"><i>Банкнота "Во все тяжкие: Уолтер Уайт"</i></p>
+                    <p class="price"><s>1000&#8381;</s> 500&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+            <a href="error.html">
+                <article data-type="одежда" data-universe="фильмы" data-price="1150" data-name="Шарф">
+                    <img src="img/gar.png" alt="Шарф">
+                    <p class="center">Шарф</p>
+                    <p class="center"><i>Шарф "Гарри Поттер: Слизерин"</i></p>
+                    <p class="price"><s>1500&#8381;</s> 1150&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+            <a href="error.html">
+                <article data-type="другое" data-universe="игры" data-price="10900" data-name="Сумка">
+                    <img src="img/hsr.png" alt="Сумка">
+                    <p class="center">Сумка</p>
+                    <p class="center"><i>Сумка "Honkai Star Rail: Кафка"</i></p>
+                    <p class="price"><s>11500&#8381;</s> 10900&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+            <a href="error.html">
+                <article data-type="фигурки" data-universe="фильмы" data-price="3900" data-name="Фигурка «Веном»">
+                    <img src="img/ven.png" alt="Фигурка Веном">
+                    <p class="center">Фигурка «Веном»</p>
+                    <p class="center"><i>Коллекционная фигурка "Marvel: Веном"</i></p>
+                    <p class="price"><s>4400&#8381;</s> 3900&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+            <a href="error.html">
+                <article data-type="сувениры" data-universe="аниме" data-price="800" data-name="Блокнот-гримуар">
+                    <img src="img/grim.png" alt="Гримуар">
+                    <p class="center">Блокнот-гримуар</p>
+                    <p class="center"><i>Блокнот-гримуар "Черный клевер: Аста"</i></p>
+                    <p class="price"><s>1400&#8381;</s> 800&#8381;</p>
+                    <button type="button">Добавить в корзину</button>
+                </article>
+            </a>
+        </section>
+        <p class="no-results" id="no-results" style="display:none;">Ничего не найдено</p>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="mailto:kkhempll@gmail.com">&#128386; kkhempll@gmail.com</a>
+                <span class="footer-sep">|</span>
+                <a href="tel:+78001234567">&#9990; +78001234567</a>
+                <span class="footer-sep">|</span>
+                <span>Site Designed By: <a href="https://t.me/khempl">khempl</a></span>
+                <span class="footer-sep">|</span>
+                <span>&copy; 2020-2026</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://t.me/khempl"><img src="img/tg.png" alt="Telegram" width="30" height="30"></a>
+                <span class="footer-sep">|</span>
+                <a href="https://vk.com/khempl"><img src="img/vk.png" alt="VK" width="30" height="30"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/cart-utils.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/stars.js"></script>
+</body>
+</html>

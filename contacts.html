@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliquary - Контакты</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/logo icon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="img/lo.png" alt="logo" height="60"></a>
+            </div>
+            <nav class="nav">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="catalog.html">КАТАЛОГ</a>
+                <a href="about.html">О НАС</a>
+                <a href="contacts.html">КОНТАКТЫ</a>
+                <a href="cart.html">КОРЗИНА</a>
+                <a href="login.html">ПРОФИЛЬ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contacts-layout">
+
+            <div class="contacts-left">
+
+
+                 <div class="shop-photo">
+                    <img src="img/shop2.png" alt="Вход в магазин">
+                </div>
+
+                
+                <div class="contact-card">
+                    <span class="contact-icon"><img src="img/address.png" alt="Адрес" height="20px"></span>
+                    <div class="contact-info">
+                        <p class="contact-label">Адрес</p>
+                        <p class="contact-value">ул. Котят, 67<br>Владимир, центр города</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-icon">&#9990;</span>
+                    <div class="contact-info">
+                        <p class="contact-label">Телефон</p>
+                        <a href="tel:+78001234567" class="contact-value">+7 800 123-45-67</a>
+                        <p class="contact-sub">10:00 - 21:00, каждый день</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-icon">&#128386;</span>
+                    <div class="contact-info">
+                        <p class="contact-label">Email</p>
+                        <a href="mailto:kkhempll@gmail.com" class="contact-value">kkhempll@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-icon"><img src="img/tg.png" alt="Telegram" height="20px"></span>
+                    <div class="contact-info">
+                        <p class="contact-label">Мы в соцсетях</p>
+                        <a href="https://t.me/khempl" class="contact-value">Telegram: @khempl</a>
+                        <a href="https://vk.com/khempl" class="contact-value">ВКонтакте: vk.com/khempl</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-icon"><img src="img/time.png" alt="Время" height="20px"></span>
+                    <div class="contact-info">
+                        <p class="contact-label">Режим работы</p>
+                        <p class="contact-value">Каждый день</p>
+                        <p class="contact-sub">10:00 - 21:00</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <p class="contact-label">Идентификаторы</p>
+                        <p class="contact-value">ИНН: 337777777777</p>
+                        <p class="contact-value">ОГРНИП: 333777777777777</p>
+                    </div>
+                </div>
+
+               
+
+            </div>
+
+            <div class="contacts-right">
+                <h3 class="form-title">Форма обратной связи</h3>
+                <p class="form-subtitle">Если у вас возникли вопросы - напишите нам, и мы ответим в течение трёх дней.</p>
+
+                <form class="contact-form" id="contact-form" action="#" method="get">
+
+                    <div class="form-group">
+                        <label class="form-label">ФИО</label>
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="mail" placeholder="example@mail.ru" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Тема вопроса</label>
+                        <select name="themes">
+                            <option value="Доставка задерживается">Доставка задерживается</option>
+                            <option value="Не проходит оплата">Не проходит оплата</option>
+                            <option value="Товара нет в наличии">Товара нет в наличии</option>
+                            <option value="Пришёл не тот товар">Пришёл не тот товар</option>
+                            <option value="Отказ от товара">Отказ от товара</option>
+                            <option value="Товар с браком">Товар с браком</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Кратко опишите тему</label>
+                        <textarea name="polethemes" placeholder="Кратко опишите вашу тему..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Подробное описание</label>
+                        <textarea name="question" placeholder="Подробно расскажите о вашей проблеме..." rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-agree">
+                        <label class="agree-label">
+                            <input type="checkbox" required id="agree">
+                            <span>Нажимая кнопку, вы принимаете условия <a href="agreement.html">Пользовательского соглашения</a> и даёте согласие на обработку персональных данных согласно ФЗ №152</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Отправить ➜</button>
+
+                </form>
+
+                <div class="form-success" id="form-success" style="display:none;">
+                    <span class="success-icon">✓</span>
+                    <p>Готово! Ответ придёт на указанную почту в течение трёх дней.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="mailto:kkhempll@gmail.com">&#128386; kkhempll@gmail.com</a>
+                <span class="footer-sep">|</span>
+                <a href="tel:+78001234567">&#9990; +78001234567</a>
+                <span class="footer-sep">|</span>
+                <span>Site Designed By: <a href="https://t.me/khempl">khempl</a></span>
+                <span class="footer-sep">|</span>
+                <span>&copy; 2020-2026</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://t.me/khempl"><img src="img/tg.png" alt="Telegram" width="30" height="30"></a>
+                <span class="footer-sep">|</span>
+                <a href="https://vk.com/khempl"><img src="img/vk.png" alt="VK" width="30" height="30"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contacts.js"></script>
+    <script src="js/cart-utils.js"></script>
+    <script src="js/stars.js"></script>
+</body>
+
+</html>
